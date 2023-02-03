@@ -10,6 +10,7 @@
 
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     padding: 0 4%;
 
@@ -27,6 +28,16 @@
 
     background-color: var(--white);
     border-radius: 10px;
+}
+.search:focus{
+    outline: none;
+    border: 2px solid var(--cyan);
+}
+.err{
+    border: 2px solid var(--red);
+}
+.search.err::placeholder {
+    color: var(--red);
 }
 .submit{ 
     background-color: var(--cyan);
@@ -56,6 +67,7 @@
 
     position: absolute;
     bottom: 20px;
+    right: 0px;
 
     color: var(--red);
 

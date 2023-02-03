@@ -44,8 +44,11 @@ export const Search = () => {
   return (
     <section className={styles.sectionTwo}>
       <form className={styles.searchForm} onSubmit={handleSubmit(onSubmit)}>
+        {console.log(errors.link)}
         <input
-          className={styles.search}
+          className={cn(styles.search, {
+            [styles.err]: errors.link?.type === "required",
+          })}
           placeholder="search here"
           {...register("link", { required: true })}
           aria-invalid={errors.link ? "true" : "false"}
@@ -55,7 +58,7 @@ export const Search = () => {
           type="submit"
           value="Shorten it!"
         ></input>
-        {errors.link && <p className={styles.error}>Please add link</p>}
+        {errors.link && <p className={styles.error}>*Please add link</p>}
       </form>
       {links.ok && (
         <ul className={styles.shortLinks}>
