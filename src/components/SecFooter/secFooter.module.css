@@ -1,0 +1,41 @@
+.fakeFooter{
+    height: 250px;
+    padding: 50px;
+    background: url('../../../public/images/bg-boost-desktop.svg') var(--dark-violet) no-repeat center;
+    background-size: cover;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    
+    text-align: center;
+}
+.fakeFooter h3{
+    color: var(--white);
+    font-size: 34px;
+    font-weight: bold;
+}
+.links{
+    width: 30%;
+   align-self: center;
+}
+
+@media (width< 767px) {
+    .fakeFooter{
+        padding: 80px 25px;
+        justify-content: space-between;
+    }
+    .links{
+        width: 100%;
+    }
+    .fakeFooter h3{
+        font-size: 28px;
+    }
+}

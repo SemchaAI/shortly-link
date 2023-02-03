@@ -1,0 +1,107 @@
+.footer{
+    height: 300px;
+    padding-top: 50px;
+
+    background-color: var(--darkest-violet);
+    background-size: cover;
+    color: var(--white);
+
+    display: flex;
+    justify-content: space-evenly;
+
+    text-transform: capitalize;
+
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -300px;
+
+
+    width: 100%;
+}
+
+.logo{
+    fill: var(--white);
+}
+.nav{
+    margin-top: 10px;
+    display: flex;
+    gap: 40px;
+    text-align: start;
+
+}
+.nav a {
+    color: var(--grayish-violet);
+}
+.nav a:focus,.nav a:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+.nav p{
+    margin-bottom: 10px;
+}
+
+
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.resources{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.icons{
+    margin-top: 5px;
+    display: flex;
+    gap: 20px;
+
+    fill: var(--white);
+    block-size: fit-content;
+}
+.icons .fb:hover , .icons .fb:focus,
+.icons .inst:hover , .icons .inst:focus,
+.icons .printerest:hover , .icons .printerest:focus,
+.icons .twitter:hover , .icons .twitter:focus{
+  fill: var(--cyan);
+  cursor: pointer;
+}
+
+@media ( width< 767px) {
+    .footer{
+        height: 800px;
+
+        flex-direction: column;
+    
+        text-transform: capitalize;
+        align-items: center;
+    
+        bottom: -800px;
+    }
+    
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav p{
+        margin: 10px 0;
+    }
+
+    .icons{
+        margin-top: 5px;
+        display: flex;
+        gap: 20px;
+        padding: 50px;
+    
+        fill: var(--white);
+        block-size: fit-content;
+    }
+}

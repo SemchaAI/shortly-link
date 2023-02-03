@@ -1,0 +1,41 @@
+.cyan{
+    background-color: var(--cyan);
+    color: var(--white);
+
+    padding: 14px 30px;
+    block-size: fit-content !important;
+
+}
+.cyan:hover, .cyan:focus{
+    opacity: 0.7;
+}
+
+.copied{
+    background-color: var(--darkest-violet);
+    color: var(--white);
+
+    padding: 14px 30px;
+    block-size: fit-content !important;
+
+}
+.copied:hover, .cyan:focus{
+    opacity: 0.7;
+}
+
+.black{
+    color: var(--grayish-violet);
+    padding: 13px 30px;
+    block-size: fit-content !important;
+
+}
+.black:hover,.black:focus{
+    color: var(--darkest-violet);
+    border: 1px solid var(--darkest-violet);
+}
+
+.round{
+    border-radius: 30px;
+}
+.squared{
+    border-radius: 10px;
+}

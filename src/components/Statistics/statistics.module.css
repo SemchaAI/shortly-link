@@ -1,0 +1,242 @@
+.sectionThree{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    position: relative;
+}
+.advStats{
+    text-align: center;
+    max-width: 50%;
+    align-self: center;
+}
+.advStats h2 {
+    color: var(--darkest-violet);
+    font-weight: bold;
+    font-size: 44px;
+
+}
+.advStats p {
+    margin-top: 20px;
+    color: var(--grayish-violet);
+    font-size: 22px;
+}
+
+.advCards{
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    position: relative;
+
+
+    gap: 25px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.flexColumn{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-color: bisque;
+    
+    max-width: 350px;
+    height: 270px;
+
+}
+.flexColumn:first-child {
+    justify-content: start;
+}
+.flexColumn:last-child{
+    justify-content: end;
+}
+
+.flexColumn:first-child::before{
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -40px;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+
+    background: url('../../../public/images/icon-brand-recognition.svg') var(--darkest-violet) no-repeat center center;
+    z-index: 5;
+}
+.flexColumn:last-child::before{
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+
+    background: url('../../../public/images/icon-fully-customizable.svg') var(--darkest-violet) no-repeat center center;
+    z-index: 5;
+}
+.flexColumn:nth-child(2n):before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+
+    background: url('../../../public/images/icon-detailed-records.svg') var(--darkest-violet) no-repeat center center;
+    z-index: 5;
+}
+.flexColumn:not(:first-child)::after{
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: -25px;
+   width: 25px;
+
+   border: 3px solid var(--cyan);
+}
+
+
+.flexColumn h3{
+    font-weight: bold;
+    margin-top: 50px;
+
+    text-transform: capitalize;
+}
+.flexColumn p{
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-top: 15px;
+
+    color: var(--grayish-violet);
+}
+
+.brand{
+    padding: 20px 20px;
+    background-color: var(--almost-white);
+    border-radius: 5px;
+
+}
+.records{
+    padding: 20px 20px;
+    background-color: var(--almost-white);
+    border-radius: 5px;
+}
+.customizable{
+    padding: 20px 20px;
+    background-color: var(--almost-white);
+    border-radius: 5px;
+}
+
+
+@media (width< 767px) {
+    .advStats{
+        max-width: 100%;
+    }
+    .advCards{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    
+        position: relative;
+    
+        gap: 25px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .flexColumn{
+        justify-content: center;
+        height: 265px;
+    }
+    .flexColumn:first-child {
+        justify-content: center;
+    }
+    .flexColumn:last-child{
+        justify-content: center;
+    }
+    .flexColumn:first-child::before{
+        content: '';
+        position: absolute;
+        left: calc(50% - 40px);
+        top: -10px;
+    
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    
+        background: url('../../../public/images/icon-brand-recognition.svg') var(--darkest-violet) no-repeat center center;
+        z-index: 5;
+    }
+    .flexColumn:last-child::before{
+        content: '';
+        position: absolute;
+        left: calc(50% - 40px);
+        top: -10px;
+    
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    
+        background: url('../../../public/images/icon-fully-customizable.svg') var(--darkest-violet) no-repeat center center;
+        z-index: 5;
+    }
+    .flexColumn:nth-child(2n):before{
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: calc(50% - 40px);
+    
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    
+        background: url('../../../public/images/icon-detailed-records.svg') var(--darkest-violet) no-repeat center center;
+        z-index: 5;
+    }
+    .flexColumn:not(:first-child)::after{
+       content: '';
+       position: absolute;
+       top: -10px;
+       left: calc(50% - 44px);
+       width: 89px;
+       transform: rotate( 90deg);
+       border: 3px solid var(--cyan);
+    }
+    .flexColumn h3{
+        font-weight: bold;
+        margin-top: 50px;
+    
+        text-transform: capitalize;
+    }
+    .flexColumn p{
+        font-weight: 200;
+        line-height: 1.5;
+        font-size: 15px;
+        margin-top: 15px;
+    
+        color: var(--grayish-violet);
+    }
+    .brand{
+        padding: 20px 20px;
+        background-color: var(--almost-white);
+        border-radius: 5px;
+    
+    }
+    .records{
+        padding: 20px 20px;
+        background-color: var(--almost-white);
+        border-radius: 5px;
+    }
+    .customizable{
+        padding: 20px 20px;
+        background-color: var(--almost-white);
+        border-radius: 5px;
+    }
+}
