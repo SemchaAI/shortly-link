@@ -146,6 +146,7 @@
     }
     .submit{ 
         max-height: 40%;
+        min-height: 40px;
         width:  100%;
         padding:  10px 0;
     
@@ -183,7 +184,7 @@
     }
     .shortedLink{
         flex-direction: column;
-        gap: 15px;
+        gap: 5px;
         align-items: center;
 
         width: 100%;
@@ -195,8 +196,8 @@
         align-self: flex-start;
     }
     .shortedLink a{
-        padding-left: 135px;
-        padding-right: 135px;
+        display: block;
+        width: 292px;
     }
 
     .links{
